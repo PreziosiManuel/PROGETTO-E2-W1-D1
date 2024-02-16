@@ -5,10 +5,15 @@
 }
 
 header {
-  background-color: #ffc017;
+  background-color: hsl(44, 100%, 55%);
 }
 .border {
   border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: hsl(44, 100%, 55%);
+  width: 100%;
 }
 .nav {
   display: flex;
@@ -35,6 +40,7 @@ header {
   align-items: center;
   overflow: hide;
   margin-left: 10%;
+  margin-top: 76px;
 }
 
 .nav2 h2 {
@@ -121,7 +127,6 @@ aside h2 {
 
 /* ============================ARTICLE========================================== */
 article {
-  height: 50rem;
   display: flex;
 }
 svg {
@@ -186,6 +191,7 @@ article p:nth-of-type(2) {
   line-height: 20px;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  position: relative;
 }
 
 article button {
@@ -195,7 +201,22 @@ article button {
 }
 svg.il.mj {
   position: absolute;
-  right: 52%;
+  right: 0;
   vertical-align: middle;
   cursor: pointer;
+}
+
+/* ============FOOTER============== */
+
+footer h2 {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 16px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.headerbar {
+  position: fixed;
+  top: 0;
+  bottom: 76px;
+  z-index: 10;
 }
